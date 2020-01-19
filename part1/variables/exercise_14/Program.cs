@@ -8,6 +8,10 @@ namespace exercise_14
     {
       Console.WriteLine("Give me the truth!");
       // Write your code here:
+      
+      string truth = Console.ReadLine();
+      bool userInput = Convert.ToBoolean(truth);
+      Console.WriteLine(userInput);
 
     }
   }
