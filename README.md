@@ -60,7 +60,7 @@ namespace exercise_04
 }
 ```
 
-Change it, so that it prints **Passport and toothbrush!**
+Change it, so that it prints **Passport and a toothbrush!**
 Do not change the line containing Console.WriteLine, only change the content of the variable!
 
 
@@ -163,7 +163,7 @@ Change the values of the variables, so the program will print
 
 ```console
 Days to summer:
-300
+200
 Hours to lunch:
 3.5
 Coding is fun:
@@ -231,3 +231,297 @@ Your string: This is a masterpiece!
 Your integer: 42
 Your double: 3.1415
 Your boolean: True
+```
+
+## Calculations
+
+#### Exercise_16
+
+Create a program, which asks user for amount of days, and prints the total amount of seconds for that amount of days, gives the answer and quits.
+
+Example print:
+```console
+How many days?
+> 2
+172800
+```
+```console
+How many days?
+> 7
+604800
+```
+
+#### Exercise_17
+
+Create a program, which asks the user for two integers, and calculates their sum.  
+
+Remember, that the input is a string, so you have to convert it to integer!
+
+Example output:
+
+```console
+Give the first number!
+> 8
+Give the second number!
+> 3
+The sum is 11
+```
+
+```console
+Give the first number!
+> 3
+Give the second number!
+> -1
+The sum is 2
+```
+
+#### Exercise_18
+
+Expand a little on the previous exercise. Now create a program, which asks for three integers, and calculates their sum.
+
+```console
+Give the first number!
+> 3
+Give the second number!
+> -1
+Give the third number!
+> 2
+The sum is 4
+```
+
+#### Exercise_19
+
+Create a program, which asks the user for two integers and counts their sum. This time, also print the equation to the user, too.
+
+```console
+Give the first number!
+> 3
+Give the second number!
+> 1
+3 + 1 = 4
+```
+
+```console
+Give the first number!
+> 5
+Give the second number!
+> -1
+3 + -1 = 2
+```
+
+#### Exercise_20
+
+Create a program, which asks the user for two integers and multiplies them with each other.
+
+```console
+Give the first number!
+> 3
+Give the second number!
+> 2
+3 * 2 = 6
+```
+
+```console
+Give the first number!
+> 50
+Give the second number!
+> -2
+50  * -2 = -100
+```
+
+#### Exercise_21
+
+Create a program, which asks the user for two **integers** and calculates their **average** as a **double**.
+
+```console
+Give the first number!
+> 3
+Give the second number!
+> 2
+The average is 2.5
+```
+
+#### Exercise_22
+
+Create a program, which asks the user for three **integers** and calculates their **average** as a **double**.
+
+```console
+Give the first number!
+> 3
+Give the second number!
+> 2
+Give the third number!
+> 1
+The average is 2.0
+```
+
+#### Exercise_23
+
+Let's create a program, that does all the basic calculations from user input! Ask for two integers and do the calculations with them.
+
+```console
+Give the first number!
+> 3
+Give the second number!
+> 2
+3 + 2 = 5
+3 - 2 = 1
+3 * 2 = 6
+3 / 2 = 1.5
+```
+
+## Conditionals and comparison
+
+#### Exercise_24
+
+Create a program, which asks the user for an integer.
+
+If the given integer is larger than 120, output "Speeding!".
+
+```console
+Your speed:
+> 5
+````
+
+```console
+Your speed:
+125
+Speeding!
+```
+
+#### Exercise_25
+
+Create a program which asks for an integer. If the integer is 1984, output "Orwell".
+
+```console
+Give a number:
+>1985
+```
+
+```console
+Give a number:
+> 1984
+Orwell
+```
+
+#### Exercise_26
+
+Create a program which asks for an integer. If the integer is less than 1900, output "You're old".
+
+```console
+Give your age:
+>1985
+```
+
+```console
+Give your age:
+> 1899
+You're old
+```
+
+#### Exercise_27
+
+Create a program which tells if the given number is positive (greater than zero), or not.
+
+```console
+Give a number:
+> 5
+It is positive
+```
+
+```console
+Give a number:
+-2
+It is not positive
+```
+
+### Exercise_28
+
+Create a program which tell if the given person is legally adult (in Finland, over 18), or not.
+
+```console
+How old are you?
+> 5
+You're under age!
+```
+
+```console
+How old are you?
+> 18
+You're an adult!
+```
+
+### Exercise_29
+
+Create a program which asks for two integers. The program should tell which of them is greater. If they are equal, that should be noted, too.
+
+```console
+Give the first number!
+> 3
+Give the second number!
+> 2
+The larger number is 3!
+```
+
+```console
+Give the first number!
+> 3
+Give the second number!
+> 4
+The larger number is 4!
+```
+
+```console
+Give the first number!
+> 3
+Give the second number!
+> 2
+They are equal!
+```
+
+#### Exercise_30
+
+Here is the grading for this course:
+
+| Percent | Grade|
+|---|---|
+| < 0 | Impossible |
+| 0 - 49  | Fail |
+| 50 - 59 | 1 |
+| 60 - 69 | 2 |
+| 70 - 79 | 3 |
+| 80 - 89 | 4 |
+| 90 - 100 | 5 |
+| > 100 | Outstanding! |
+
+Create a program, which asks the user for their percent, and gives them their score. For example:
+
+```console
+Give your percent [0 - 100]:
+> -2
+Impossible
+```
+
+```console
+Give your percent [0 - 100]:
+> 49
+Fail
+```
+
+```console
+Give your percent [0 - 100]:
+> 75
+Grade: 3
+```
+
+```console
+Give your percent [0 - 100]:
+> 99
+Grade: 5
+```
+
+```console
+Give your percent [0 - 100]:
+> 9001
+Grade: Outstanding!
+```
