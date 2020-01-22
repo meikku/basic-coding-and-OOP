@@ -1,6 +1,29 @@
+## How to return your exercises
+
+You return your exercises by pushing your answers to your personal repository.
+
+The deadlines are every Sunday. From part 2 onwards, **they might still change**:
+
+|Part| Deadline           |
+|:--:|:------------------:|
+| 1  | 26.01.2020 at 23:59|
+| 2  | 02.02.2020 at 23:59|
+| 3  | 09.02.2020 at 23:59|
+| 4  | 16.02.2020 at 23:59|
+| 5  | 23.02.2020 at 23:59|
+| 6  | 01.03.2020 at 23:59|
+
+## How to get more exercises
+
+You can get more exercises to your local computer by **pulling this repository** with the command **git pull**.  
+
+You can also update tests with this, if there are some problems.
+
 # Exercises
 
-## Part 1
+The following instructions are also in the subfolders of each part.
+
+# Part 1
 
 ## Printing and reading
 
@@ -696,3 +719,122 @@ Total amount of numbers: 3
 ```
 
 Hint: You will need two variables to store the data, one for the sum, one for the amount.
+
+
+# Part 2
+
+## Subproblems
+
+#### Exercise_41
+
+Write a program that reads an integer from the user input, and then prints the second power of the given integer, i.e. the integer multiplied by itself.
+
+```console
+> 4
+16
+```
+
+```console
+> 5
+25
+```
+
+```console
+> -3
+9
+```
+
+#### Exercise_42
+
+Write a program that reads **two integers** from the user, and prints the **square root of the sum of these integers**. The program **does not need to work with negative values**.
+
+You can get the square root of an integer with the command Math.Sqrt like this:
+
+```cs
+int number = 42;
+double squareRoot = Math.Sqrt(number);
+Console.WriteLine(squareRoot);
+```
+
+```console
+> 1 
+> 0 
+1
+```
+
+```console
+> 5 
+> 4 
+3
+```
+
+```console
+> 1 
+> 35 
+6
+```
+
+#### Exercise_43
+
+Write a program, that reads an integer from the user. If the number is less than 0, it prints the number multiplied by -1. Otherwise the program prints the number itself. A few examples of the expected function below:
+
+```console
+> -3
+3
+```
+
+```console
+> 1
+1
+```
+
+```console
+> 0
+0
+```
+
+#### Exercise_44
+
+Write a program that reads two integers from the user input. If the first number is greater than the second, the program prints "(first) is greater than (second)." If the first number is less than the second, the program prints "(first) is less than (second)." Otherwise the program prints "(first) is equal to (second)." The (first) and (second) should always be replaced with the actual numbers given by the user.
+
+A few examples of the expected behaviour:
+
+```console
+> 8 
+> 4 
+8 is greater than 4.
+```
+
+```console
+> -3 
+> 5 
+-3 is less than 5.
+```
+
+```console
+> 1 
+> 1 
+1 is equal to 1.
+```
+
+## More loops
+
+#### Exercise_45
+
+Write a program that reads an integer from the user. Then the program prints numbers from 0 to the number given by the user. You can assume that the user always gives a positive number. Below is some examples of the wanted functionality. **You can use either a while-loop with a condition, or a for-loop.**
+
+```console
+> 4
+0
+1
+2
+3
+4
+```
+
+```console
+> 1
+0
+1
+```
+
