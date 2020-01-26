@@ -6,6 +6,7 @@ namespace exercise_38
   {
     public static void Main(string[] args)
     {
+      
       int amount = 0;
       while (true)
       {

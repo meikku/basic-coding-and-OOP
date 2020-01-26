@@ -10,7 +10,7 @@ namespace exercise_40
       int amount = 0;
 
       while(true)
-      {
+      {  
         Console.WriteLine("Give a number:");
         string numberGiven = Console.ReadLine();
         int number = Convert.ToInt32(numberGiven);

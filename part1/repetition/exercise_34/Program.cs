@@ -14,7 +14,7 @@ namespace exercise_34
         if (answer == "no")
         {break;
         }
-        
+
 
       }
 
