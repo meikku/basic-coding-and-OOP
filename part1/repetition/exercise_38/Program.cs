@@ -19,12 +19,11 @@ namespace exercise_38
         }
         else if (number < 0)
         {
-          amount = amount++;
+          amount = amount + 1;
         }
       }
       Console.WriteLine("Total amount of negative numbers: " + amount);
       // Write your code here:
-
     }
   }
 }

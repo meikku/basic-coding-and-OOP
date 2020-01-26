@@ -24,7 +24,6 @@ namespace exercise_36
       else
       Console.WriteLine(number * number);
     }
-    
     }
   }
 }

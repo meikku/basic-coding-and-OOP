@@ -21,7 +21,6 @@ namespace exercise_40
       else{
         sum = sum + number;
         amount = amount + 1;
-
       }
       }
     Console.WriteLine("Total sum of numbers: " + sum);
