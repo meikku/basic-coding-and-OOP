@@ -19,8 +19,6 @@ namespace exercise_50
         amount = amount + 1;
       }
       
-
- 
     }
 
     // Write your method here:
