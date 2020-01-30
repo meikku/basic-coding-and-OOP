@@ -16,7 +16,7 @@ namespace exercise_50
       while (amount < number)
       {
         PrintPhrase();
-        amount = amount + 1;
+        amount++;
       }
       
     }

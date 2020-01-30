@@ -6,10 +6,13 @@ namespace exercise_56
   {
     public static void Main(String[] args)
     {
-
+      string yesIndeed = Word();
     }
 
     // Write your method here:
-
+    public static string Word()
+    {
+      return "How about some chocolate?";
+    }
   }
 }
