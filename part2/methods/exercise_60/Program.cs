@@ -6,6 +6,12 @@ namespace exercise_60
   {
     public static void PrintStars(int number)
     {
+      int round = 1;
+      while (round <= number)
+      {
+      Console.Write("*");
+      }
+      Console.WriteLine("");
       // you can print one star with the command
       // Console.Write("*");
       // call the print command n times
@@ -15,7 +21,7 @@ namespace exercise_60
 
     public static void Main(String[] args)
     {
-
+      
     }
 
   }
