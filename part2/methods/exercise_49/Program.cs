@@ -18,8 +18,5 @@ namespace exercise_49
 
     }
     
-       
-
-    
   }
 }
