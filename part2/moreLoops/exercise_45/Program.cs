@@ -8,14 +8,14 @@ namespace exercise_45
     {
 
       // Write your code here:
-      string userInput = Console.ReadLine();
-      int number = Convert.ToInt32(userInput);
+      
+      int number = Convert.ToInt32(Console.ReadLine());
 
-      int amount = 0;
-      while (amount <= number)
+     
+      for (int i = 0 ; i <= number; i++)
       {
-        Console.WriteLine(amount);
-        amount = amount +1;
+        Console.WriteLine(i);
+        
       }
     }
   }

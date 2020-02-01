@@ -8,15 +8,15 @@ namespace exercise_46
     {
 
       // Write your code here:
-      string userInput = Console.ReadLine();
-      int number = Convert.ToInt32(userInput);
+      
+      
      
 
-      while (number <= 100)
+      for (int number = Convert.ToInt32(Console.ReadLine()); number <= 100; number++)
       {
         
         Console.WriteLine(number);
-        number = number + 1; 
+       
       }
 
     }

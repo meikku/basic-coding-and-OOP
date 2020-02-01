@@ -9,18 +9,18 @@ namespace exercise_47
 
       // Write your code here:
       Console.WriteLine("Where to?");
-      string userInput = Console.ReadLine();
-      int end = Convert.ToInt32(userInput);
+      
+      int end = Convert.ToInt32(Console.ReadLine());
      
 
       Console.WriteLine("Where from?");
-      string secondInput = Console.ReadLine();
-      int start = Convert.ToInt32(secondInput);
+      
+      int start = Convert.ToInt32(Console.ReadLine());
 
-      while (start <= end)
+      for (int i = start; i <= end; i++)
       {
-        Console.WriteLine(start);
-        start = start + 1;
+        Console.WriteLine(i);
+        
       }
     }
   }

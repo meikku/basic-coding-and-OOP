@@ -15,8 +15,8 @@ namespace exercise_48
 
       while (true)
       {
-        string userInput = Console.ReadLine();
-        int number = Convert.ToInt32(userInput);
+        
+        int number = Convert.ToInt32(Console.ReadLine());
 
         if (number % 2 == 0)
         { 
