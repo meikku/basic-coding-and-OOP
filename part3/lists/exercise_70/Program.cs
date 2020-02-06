@@ -17,6 +17,17 @@ namespace exercise_70
         }
         list.Add(input);
       }
+      int index = 0;
+      int greatest = 0;
+      while (index < list.Count)
+      {
+       
+        if (list[index] > greatest)
+        greatest = list[index];
+        index++;
+
+      }
+      Console.WriteLine("The greatest number: " + greatest);
     }
   }
 }
