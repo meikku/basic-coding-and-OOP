@@ -32,8 +32,18 @@ namespace exercise_72
 
             Console.WriteLine("Smallest number: " + smallest);
             
-           
+            int i = 0;
+            while (i < numbers.Count)
+            {
+                if (numbers[i] == smallest)
+                {
+                    Console.WriteLine("Found at index: " + i);
+                }
+                i++;
             }
+            
+           
+            
         }
     }
 }
