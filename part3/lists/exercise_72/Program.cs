@@ -19,40 +19,21 @@ namespace exercise_72
             }
 
             int smallest = 9999;
-            int index = 0;
-            int whichIndex = 0;
+            int index = 0; 
 
             while (index < numbers.Count)
             {
                 if (numbers[index] < smallest)
                 {
-                    smallest = numbers[index];
-
+                    smallest = (numbers[index]);
                 }
-
-                index++;
-                if (numbers.Contains(smallest))
-                { 
-
-                }
-
+                index++; 
             }
+
             Console.WriteLine("Smallest number: " + smallest);
-            int whichIndex = smallest;
-
-            while (index < numbers.Count)
-            {
-               if ((numbers[index]== 
-               {
-                 Console.WriteLine("Found at index: " + whichIndex); 
-               }
-
-             
+            
+           
             }
-
-
-           
-           
         }
     }
 }
