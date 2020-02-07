@@ -19,7 +19,23 @@ namespace exercise_79
       array[7] = 7;
 
       Console.WriteLine("Search for?");
-      int searching = Convert.ToInt32(Console.ReadLine());
+      int searching = Convert.ToInt32(Console.ReadLine()); // mitä etsitään, kysytään käyttäjältä
+      int index = 0; // ekasta indeksistä aloitetaan
+      bool found = false;
+      while (index < array.Length) // käydäänpä taas lista läpi
+      {
+        if (array[index] == searching) // tsekataan löytyykö haluttu numero listalta
+        {
+          Console.WriteLine(searching + " is at index " + index + "."); // kerrotaan jos löytyy, ja mistä
+          found = true;
+        }
+       
+        index++; // indeksi kasvaa
+      }
+        if (found == false)
+        {
+          Console.WriteLine(searching + " was not found.");
+        }
 
       // Implement the search functionality here
 

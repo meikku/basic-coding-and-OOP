@@ -15,7 +15,20 @@ namespace exercise_82
 
     public static void PrintArrayInStars(int[] array)
     {
-
+      int index = 0;
+     
+      while (index < array.Length)
+      {
+        int round = 0;
+        int amountOfStars = array[index];
+        while (round < amountOfStars)
+        {
+           Console.Write("*");
+           round++;
+        }
+        Console.WriteLine("");
+        index++;
+      }
     }
   }
 }
