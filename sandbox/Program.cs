@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace sandbox
 {
@@ -6,23 +7,27 @@ namespace sandbox
     {
         static void Main(string[] args)
         {
-            Person ada = new Person("Ada");
-            Person antti = new Person("Antti");
-            Person martin = new Person("Martin");
 
-            ada.PrintPerson();
-            antti.PrintPerson();
-            martin.PrintPerson();
+            string text = File.ReadAllText("text.txt");
+            Console.WriteLine("This was done with ReadAllText.");
+            Console.WriteLine(text);
 
             Console.WriteLine();
 
-            ada.GrowOlder();
-            antti.GrowOlder();
-            antti.GrowOlder();
+            while (true)
+            {
+                Console.WriteLine("Enter name and age separated by a comma:");
+                string input = Console.ReadLine();
+                if (input == "")
+                {
+                    break;
+                }
+                string[] pieces = input.Split(",");
+                Console.WriteLine("Name: " + pieces[0] + ", age: " + pieces[1]);
+            }
 
-            ada.PrintPerson();
-            antti.PrintPerson();
-            martin.PrintPerson();
+
         }
     }
 }
+
