@@ -9,10 +9,10 @@ namespace exercise_118
         {
             // Ask the user for the file name and print the content of the file
             
-            Console.Write("Name of the file: ");
+            Console.WriteLine("Name of the file:");
             string file = Console.ReadLine();
 
-            string[] names = File.ReadAllLines(file);
+            string names = File.ReadAllText(file);
 
             
 
