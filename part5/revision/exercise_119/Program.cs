@@ -8,7 +8,9 @@ namespace exercise_119
   {
     public static void Main(string[] args)
     {
-
+      Timer timer = new Timer();
+      timer.Advance();
+      Console.WriteLine(timer);
     }
   }
 }
