@@ -8,22 +8,27 @@ namespace sandbox
         static void Main(string[] args)
         {
 
-            string text = File.ReadAllText("text.txt");
-            Console.WriteLine("This was done with ReadAllText.");
-            Console.WriteLine(text);
+             public void Advance(int howManyDays)
+        {
+            int daysLimit = 30;
 
-            Console.WriteLine();
-
-            while (true)
+            day += howManyDays;
+            if (howManyDays > daysLimit)
             {
-                Console.WriteLine("Enter name and age separated by a comma:");
-                string input = Console.ReadLine();
-                if (input == "")
-                {
-                    break;
-                }
-                string[] pieces = input.Split(",");
-                Console.WriteLine("Name: " + pieces[0] + ", age: " + pieces[1]);
+              int months = howManyDays / daysLimit;
+              month = month + months;
+              int remainder = howManyDays - (months * daysLimit);
+            }
+            if (day > daysLimit)
+            {
+              day = day - daysLimit;
+              month++;
+            }
+
+            if (month == 13)
+            {
+              month = 1;
+              year++;
             }
 
 

@@ -9,6 +9,32 @@ namespace exercise_131
     {
       List<Item> items = new List<Item>();
 
+      while (true)
+      {
+      Console.WriteLine("Identifier? (empty will stop):");
+      string identifier = Console.ReadLine();
+      if (identifier == "")
+      {
+        break;
+      }
+      Console.WriteLine("Name? (empty will stop):");
+      string name = Console.ReadLine();
+      if (name == "")
+      {
+        break;
+      }
+     
+      Item item = new Item(identifier, name);
+      if (items.Contains(item))
+      {
+        continue;
+      }
+      else 
+      {
+        items.Add(item);
+      }
+      }
+    
       // Ask for input as shown in the exercise.
 
       // The end printing is ready, don't touch this
