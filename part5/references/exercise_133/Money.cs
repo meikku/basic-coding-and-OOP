@@ -13,7 +13,7 @@ namespace exercise_133
                 euros = euros + cents / 100;
                 cents = cents % 100;
             }
-            
+
 
             this.euros = euros;
             this.cents = cents;
@@ -21,53 +21,58 @@ namespace exercise_133
 
         public Money Plus(Money addition)
         {
-            Money newMoney = new Money(this.euros, this.cents);
+            int addedEuros = this.euros + addition.euros;
+            int addedCents = this.cents + addition.cents;
+            Money newMoney = new Money(addedEuros, addedCents);
             // create a new Money object that has the correct worth
-            newMoney.euros = this.euros + addition.euros;
-            newMoney.cents = this.cents + addition.cents;
+            // newMoney.euros = this.euros + addition.euros;
+            // newMoney.cents = this.cents + addition.cents;
 
-            if (newMoney.cents > 99)
+
+            /* if (newMoney.cents > 99)
             {
                 newMoney.euros = newMoney.euros + newMoney.cents / 100;
                 newMoney.cents = newMoney.cents % 100;
             }
+            */
             return newMoney;
             // return the new Money object
-           
+
         }
 
         public Money Minus(Money decreaser)
         {
+
             Money newMoney = new Money(this.euros, this.cents);
             // create a new Money object that has the correct worth
-            
-           newMoney.euros = this.euros - decreaser.euros;
-           newMoney.cents = this.cents - decreaser.cents;
+
+            newMoney.euros = this.euros - decreaser.euros;
+            newMoney.cents = this.cents - decreaser.cents;
 
             if (newMoney.cents < 0)
-            {  
-              newMoney.euros = newMoney.euros -1;
-              newMoney.cents = newMoney.cents + 100;
+            {
+                newMoney.euros = newMoney.euros - 1;
+                newMoney.cents = newMoney.cents + 100;
             }
 
             if (newMoney.euros < 0)
             {
-              newMoney.euros = 0;
-              newMoney.cents = 0;
-              return newMoney;
+                newMoney.euros = 0;
+                newMoney.cents = 0;
+                return newMoney;
             }
             if (newMoney.euros >= 0)
             {
-              return newMoney;
+                return newMoney;
             }
-            else if (newMoney.cents < 0)
-            {
-              newMoney.euros = 0;
-              newMoney.cents = 0;
-              return newMoney;
+            // else if (newMoney.cents < 0)
+            /* {
+                newMoney.euros = 0;
+                newMoney.cents = 0;
+                return newMoney;
             }
-            // return the new Money object
-          
+             return the new Money object */
+
             return newMoney;
         }
 
@@ -77,15 +82,16 @@ namespace exercise_133
             // Do something here
             if (this.euros < compared.euros)
             {
-              return true;
+                return true;
             }
-            if (this.euros > compared.euros)
-            {
+            /* if (this.euros > compared.euros)
+             {
               return false;
-            }
+            } tätä ei tarvita
+            */
             else if (this.cents < compared.cents)
             {
-              return true;
+                return true;
             }
 
             return false;

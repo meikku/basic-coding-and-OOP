@@ -42,7 +42,7 @@ namespace exercise_132
               month = month - (years * monthsLimit);
               year = year + years;
             }
-
+            // Vois tehdä myös loopin tänne ja siirtää koodin advance-metodiin. 
             // Do something here
         }
 
