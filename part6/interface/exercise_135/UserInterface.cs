@@ -36,25 +36,36 @@ namespace exercise_135
 
                 if (command == "1")
                 {
-                    Console.WriteLine("Write the joke to be added:");
-                    string joke = Console.ReadLine();
-                    joker.AddJoke(joke);
+                    AddingJokes();
                 }
                 else if (command == "2")
                 {
-                    
-                    Console.WriteLine("Drawing a joke.");
-                    Console.WriteLine(joker.DrawJoke());
-                    
+                    DrawingJokes();
 
                 }
                 else if (command == "3")
                 {
-                    Console.WriteLine("Printing the jokes.");
-                    joker.PrintJokes();
+                    PrintingJokes();
                 }
             }
-        }
 
+        }
+        public void AddingJokes()
+        {
+            Console.WriteLine("Write the joke to be added:");
+            string joke = Console.ReadLine();
+            joker.AddJoke(joke);
+        }
+        public void DrawingJokes()
+        {
+            Console.WriteLine("Drawing a joke.");
+            Console.WriteLine(joker.DrawJoke());
+
+        }
+        public void PrintingJokes()
+        {
+            Console.WriteLine("Printing the jokes.");
+            joker.PrintJokes();
+        }
     }
 }
