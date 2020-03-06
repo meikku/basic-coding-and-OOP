@@ -12,7 +12,6 @@ namespace exercise_135
         public void Start()
         {
             ManageJokeRequests();
-
         }
 
         public void ManageJokeRequests()
@@ -45,7 +44,8 @@ namespace exercise_135
                 {
                     
                     Console.WriteLine("Drawing a joke.");
-                    joker.DrawJoke();
+                    Console.WriteLine(joker.DrawJoke());
+                    
 
                 }
                 else if (command == "3")
