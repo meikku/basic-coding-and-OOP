@@ -2,7 +2,7 @@ namespace exercise_136
 {
   public class Person
   {
-    private string name;
+    private string name; 
     private int age;
 
     public Person(string givenName)
