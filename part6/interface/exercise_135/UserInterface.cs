@@ -43,11 +43,14 @@ namespace exercise_135
                 }
                 else if (command == "2")
                 {
+                    
+                    Console.WriteLine("Drawing a joke.");
                     joker.DrawJoke();
 
                 }
                 else if (command == "3")
                 {
+                    Console.WriteLine("Printing the jokes.");
                     joker.PrintJokes();
                 }
             }

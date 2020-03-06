@@ -5,21 +5,20 @@ namespace exercise_135
 {
     public class JokeManager // luodaan luokka
     {
-        private List<string> jokes; 
+        private List<string> jokes; // luodaan instanssimuuttuja: lista
         public JokeManager()
         {
-            this.jokes = new List<string>(); // lista vitseistä
+            this.jokes = new List<string>(); // uusi jokes-lista 
         }
         public void AddJoke(string joke) // metodi jossa lisätään vitsejä listalle
         {
-           
-          jokes.Add(joke);
+
+            this.jokes.Add(joke);
         }
         public string DrawJoke() // metodi jossa vedetään listalta satunnainen vitsi
 
         {
-            Console.WriteLine("Drawing a joke.");
-
+            
             if (jokes.Count == 0)
             {
                 return "Jokes are in short supply.";
@@ -33,7 +32,7 @@ namespace exercise_135
         }
         public void PrintJokes() // metodi jolla tulostetaan kaikki vitsit listalla
         {
-            Console.WriteLine("Printing the jokes.");
+            
             foreach (string joke in jokes)
             {
                 Console.WriteLine(joke);

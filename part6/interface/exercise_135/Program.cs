@@ -10,7 +10,8 @@ namespace exercise_135
       // List<string> jokes = new List<string>();
       JokeManager joker = new JokeManager(); 
       UserInterface ui = new UserInterface(joker);
+      ui.Start();
 
     }
   }
-}
+} 
