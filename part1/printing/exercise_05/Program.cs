@@ -6,7 +6,7 @@ namespace exercise_05
     {
         public static void Main(string[] args)
         {
-            string name = "Ada LoveLace";
+            string name = "Ada Lovelace";
             // Write your code here:
             Console.WriteLine("Hello " + name + "!");
             
