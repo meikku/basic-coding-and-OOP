@@ -1,30 +1,48 @@
 namespace Exercise
 {
-  public class LicensePlate
-  {
-    public string liNumber { get; }
-    private string country;
-
-    public LicensePlate(string country, string liNumber)
+   public class LicensePlate
     {
-      this.liNumber = liNumber;
-      this.country = country;
-    }
+        public string liNumber { get; }
+        private string country;
+
+        public LicensePlate(string country, string liNumber)
+        {
+            this.liNumber = liNumber;
+            this.country = country;
+        }
+
+        public override string ToString()
+        {
+            return country + " " + liNumber;
+        }
+
+        public override bool Equals(object compared)
+        {
+            if (this == compared)
+            {
+                return true;
+            }
 
 
-    public override string ToString()
-    {
-      return country + " " + liNumber;
-    }
+          
+            if ((compared == null) || !this.GetType().Equals(compared.GetType()))
+            {
+                return false;
+            }
 
-    public override bool Equals(object compared)
-    {
-      return false;
-    }
+            else
+            {
+                LicensePlate comparedLicensePlate = (LicensePlate)compared;
+                return this.liNumber == comparedLicensePlate.liNumber && this.country == comparedLicensePlate.country;
 
-    public override int GetHashCode()
-    {
-      return -1;
+               
+            }
+
+        }
+
+        public override int GetHashCode()
+        {
+            return this.liNumber.GetHashCode();
+        }
     }
-  }
 }
