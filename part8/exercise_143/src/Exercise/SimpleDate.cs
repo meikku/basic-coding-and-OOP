@@ -49,20 +49,24 @@ namespace Exercise
             {
                 return false;
             }
-            else
+            // 
+
+            SimpleDate comparedSimpledate = (SimpleDate)compared; 
+            if (this.year == comparedSimpledate.year && this.month == comparedSimpledate.month && this.day == comparedSimpledate.day)
             {
                 // convert the object to a Book object
-                SimpleDate comparedSimpledate = (SimpleDate)compared;
 
                 // if the values of the object variables are equal, the objects are, too
-                return this.year == comparedSimpledate.year && this.month == comparedSimpledate.month && this.day == comparedSimpledate.day;
+                return true;
             }
+            return false;
+
         }
 
         public override int GetHashCode()
         {
             // DO SOMETHING HERE
-            return this.day.GetHashCode();;
+            return this.day.GetHashCode(); 
         }
     }
 }
