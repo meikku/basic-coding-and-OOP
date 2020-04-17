@@ -32,6 +32,7 @@ namespace Exercise
         }
         public void Remove(string storageUnit, string item)
         {
+            if (this.storedItems.ContainsKey(storageUnit))
             this.storedItems[storageUnit].Remove(item);
             if (storedItems[storageUnit].Count == 0)
             {
