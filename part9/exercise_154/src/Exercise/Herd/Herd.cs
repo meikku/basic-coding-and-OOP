@@ -1,24 +1,39 @@
 namespace Exercise
 {
-  using System.Collections.Generic;
-  public class Herd : IMovable
-  {
-
-    public Herd()
+    using System.Collections.Generic;
+    public class Herd : IMovable
     {
-    }
+        private List<IMovable> herd;
 
-    public void AddToHerd(IMovable m)
-    {
-    }
+        public Herd()
+        {
+            this.herd = new List<IMovable>();
+        }
 
-    public void Move(int dx, int dy)
-    {
-    }
+        public void AddToHerd(IMovable movable)
+        {
+            this.herd.Add(movable);
+        }
 
-    public override string ToString()
-    {
-      return "";
+        public void Move(int dx, int dy)
+        {
+            foreach (IMovable member in herd)
+            {
+                member.Move(dx, dy);
+            }
+
+        }
+
+        public override string ToString()
+        {
+            string herdCoordinates = "";
+
+            foreach (IMovable member in herd)
+            { 
+              herdCoordinates = herdCoordinates + member.ToString() + "\n";
+
+            }
+            return herdCoordinates;
+        }
     }
-  }
 }
