@@ -15,7 +15,7 @@ namespace Exercise
 
     public void Eat()
     {
-      if (this.tacos - 1 >= 0)
+      if (this.tacos > 0)
             {
                 this.tacos -= 1;
             }
