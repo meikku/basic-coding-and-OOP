@@ -15,6 +15,7 @@ namespace Exercise
       }
     }
 
+
     public abstract bool IsInBox(Item item);
   }
 }
