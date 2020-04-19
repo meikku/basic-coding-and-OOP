@@ -7,6 +7,7 @@ namespace Exercise
     public static void Main(string[] args)
     {
       Dog dog = new Dog();
+      dog.Sleep();
       dog.Bark();
       dog.Eat();
 
