@@ -5,17 +5,27 @@ namespace Exercise
   {
     public bool DayOfWeek(string str)
     {
-      return false;
+      Regex regex = new Regex ("^(mon|tue|wed|thu|fri|sat|sun)$");
+    
+        return regex.IsMatch(str);
+    
     }
 
     public bool AllVowels(string str)
     {
-      return false;
+      Regex regex = new Regex("^[a|e|i|o|u]*$");
+
+     
+        return regex.IsMatch(str);
+     
     }
 
     public bool TimeOfDay(string str)
     {
-      return false;
+      Regex regex = new Regex("^([0-1][0-9]|[2][0-3]):([0-5][0-9]):([0-5][0-9])$");
+      
+        return regex.IsMatch(str);
+      
     }
   }
 }
