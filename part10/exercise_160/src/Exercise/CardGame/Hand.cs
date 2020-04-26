@@ -38,8 +38,21 @@ namespace Exercise
 
     public int CompareTo(Hand hand)
     {
+      int valueOfHand = 0;     
+
+      foreach(Card card in this.hand)
+      {
+        valueOfHand += card.value;
+      }
+
+      int valueOfCompared = 0; 
+
+    foreach(Card compared in hand.hand)
+    {
+      valueOfCompared += compared.value;
+    }
       
-      return 0;
+      return valueOfHand - valueOfCompared;
     }
   }
 }

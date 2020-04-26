@@ -6,17 +6,18 @@ namespace Exercise
     {
         public static void Main(string[] args)
         {
-            Card first = new Card(2, Suit.Diamond);
+            Card first = new Card(2, Suit.Club);
             Card second = new Card(14, Suit.Spade);
             Card third = new Card(12, Suit.Heart);
             Card fourth = new Card(14, Suit.Heart);
             Card fifth = new Card(12, Suit.Diamond);
 
-            List<Card> list = new List<Card> { first, second, third, fourth, fifth };
-            list.ForEach(Console.WriteLine);
             Console.WriteLine("");
+
+            List<Card> list = new List<Card> { first, second, third, fourth, fifth };
             list.Sort();
             list.ForEach(Console.WriteLine);
+            Console.WriteLine("");
 
             Hand hand1 = new Hand();
 

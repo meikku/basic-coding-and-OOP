@@ -36,13 +36,13 @@ namespace Exercise
     public int CompareTo(Card another)
     {
       
-      if (this.suit == another.suit)
+      if (this.value == another.value)
       {
-        return this.value.CompareTo(another.value);
+        return this.suit.CompareTo(another.suit);
        
       }
 
-      return this.suit.CompareTo(another.suit);
+      return this.value.CompareTo(another.value);
     }
   }
 }
