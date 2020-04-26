@@ -1,34 +1,49 @@
 namespace Exercise
 {
-  using System;
-  using System.Collections.Generic;
+    using System;
+    using System.Collections.Generic;
 
-  public class LotteryRow
-  {
-    private List<int> numbers;
-
-    public LotteryRow()
+    public class LotteryRow
     {
-      this.RandomizeNumbers();
-    }
+        private List<int> numbers;
 
-    public List<int> Numbers()
-    {
-      return this.numbers;
-    }
+        public LotteryRow()
+        {
+            this.RandomizeNumbers();
+        }
 
-    public bool ContainsNumber(int number)
-    {
-      // Tests whether the number is already among the randomized numbers
-      return false;
-    }
+        public List<int> Numbers()
+        {
+            this.numbers.Sort();
+            return this.numbers;
+        }
 
-    public void RandomizeNumbers()
-    {
-      // initialize the list for numbers
-      this.numbers = new List<int>();
-      // Implement the randomization of the numbers by using the method ContainsNumber() here
-    }
+        public bool ContainsNumber(int number)
+        {
+            if (this.numbers.Contains(number))
+            {
+                return true;
+            }// Tests whether the number is already among the randomized numbers
+            return false;
+        }
 
-  }
+        public void RandomizeNumbers()
+        {
+            // initialize the list for numbers
+            this.numbers = new List<int>();
+            Random random = new Random();
+
+            for (int i = 0; i < 7; i++)
+            {
+                int lotteryNumber = random.Next(1, 41);
+                if (!this.numbers.Contains(lotteryNumber))
+                {
+                    this.numbers.Add(lotteryNumber);
+                }
+
+            }
+            // Implement the randomization of the numbers by using the method ContainsNumber() here
+        }
+
+    }
 }
