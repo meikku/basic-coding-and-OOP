@@ -15,7 +15,7 @@ namespace Exercise
     }
     public int ThrowDie()
     {
-      int randomNumber = this.random.Next(1, numberOfFaces);
+      int randomNumber = this.random.Next(1, numberOfFaces + 1);
 
       
       
