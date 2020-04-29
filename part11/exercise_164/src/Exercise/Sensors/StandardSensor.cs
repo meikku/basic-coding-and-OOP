@@ -2,13 +2,15 @@ namespace Exercise
 {
   public class StandardSensor : Sensor
   {
+    private int value;
     public StandardSensor(int value)
     {
+      this.value = value;
     }
 
     public bool IsOn()
     {
-      return false;
+      return true;
     }
 
 
@@ -24,7 +26,7 @@ namespace Exercise
 
     public int Read()
     {
-      return 0;
+      return this.value;
     }
   }
 }
