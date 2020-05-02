@@ -52,26 +52,37 @@ namespace Exercise
         public bool Save()
         {
           
-
+            List<string> savedWords = new List<string>();
             try
             {
                 StreamWriter sw = new StreamWriter(this.file);
-                foreach (KeyValuePair<string, string> kvp in this.dictionary)
+                foreach (string word in this.dictionary.Keys)
+                
                 {
-                    // if (!this.dictionary.ContainsKey(kvp.Value))
-                    // {
-                    sw.WriteLine(kvp.Key + ":" + kvp.Value);
+                    // string translation = word + ":" + this.dictionary[word];
+                    // string backwards = this.dictionary[word] + ":" + word;
+                    // if (!savedWords.Contains(translation) && !savedWords.Contains(backwards))
+                    // savedWords.Add(translation);
+                    // sw.WriteLine(translation);
 
-                    //}
+                    if (!savedWords.Contains(word) && !savedWords.Contains(this.dictionary[word]))
+                    {
+                        savedWords.Add(word);
+                        sw.WriteLine(word + ":" + this.dictionary[word]);
+                    }
+
+                    
                 }
+                
                 sw.Close();
-                return true;
+                
 
             }
             catch 
             {
                 return false;
             }
+            return true;
         }
 
         public string Translate(string word)
