@@ -4,7 +4,6 @@ namespace Exercise
     using System.Collections.Generic;
     public class Program
     {
-<<<<<<< HEAD
         public static void Main(string[] args)
         {
 
@@ -27,23 +26,6 @@ namespace Exercise
             // Save the file
             dictionary.Save();
         }
-=======
-      SaveableDictionary dictionary = new SaveableDictionary("words.txt");
-      bool wasSuccessful = dictionary.Load();
-
-      if (wasSuccessful)
-      {
-        Console.WriteLine("Successfully loaded the dictionary from file");
-      }
-      else
-      {
-        Console.WriteLine("File not loaded!");
-      }
-
-      Console.WriteLine(dictionary.Translate("apina"));
-      Console.WriteLine(dictionary.Translate("ohjelmointi"));
-      Console.WriteLine(dictionary.Translate("alla oleva"));
->>>>>>> c41c326b51267b8a870cd7add7774b5bfb1e0b12
     }
 }
 
