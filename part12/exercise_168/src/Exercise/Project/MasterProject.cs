@@ -2,6 +2,7 @@ namespace MasterProject
 {
   
   using System;
+  using Builders = MasterProject.BuilderProject.Builders;
   // Define an alias for the nested namespace. using Builders = ...
   
   public class MasterClass
